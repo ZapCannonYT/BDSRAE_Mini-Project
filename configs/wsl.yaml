@@ -1,0 +1,10 @@
+# Native run inside WSL: data lives on the Linux disk so Spark is not slowed by the Windows mount.
+extends: default.yaml
+
+data:
+  raw_dir: ~/taxidrift/data/raw
+  processed_dir: ~/taxidrift/data/processed
+  zone_lookup: ~/taxidrift/data/raw/taxi_zone_lookup.csv
+
+mlflow:
+  tracking_uri: models/mlruns

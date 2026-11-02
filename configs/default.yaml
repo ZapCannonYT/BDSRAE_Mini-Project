@@ -1,0 +1,68 @@
+# Shared settings. Code reads these through taxidrift.config.load_config().
+# configs/docker.yaml overrides the few values that differ inside containers.
+
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  zone_lookup: data/raw/taxi_zone_lookup.csv
+  start_month: "2019-01"
+  end_month: "2021-12"
+  # Trips with pickup times outside this range are dropped (the raw files contain bad timestamps).
+  valid_from: "2019-01-01"
+  valid_to: "2022-01-01"
+
+kafka:
+  bootstrap_servers: localhost:9092
+  topics:
+    trips: trips
+    zone_demand: zone_demand
+    drift_events: drift_events
+
+stream:
+  replay_speedup: 3600
+  window: 1 hour
+  watermark: 2 hours
+
+model:
+  # Train Jan-Jun 2019; Jul-Sep 2019 for early stopping and detector calibration;
+  # the stream under test starts Oct 2019.
+  train_from: "2019-01-01"
+  train_to: "2019-07-01"
+  calibrate_to: "2019-10-01"
+  stream_from_to: "2020-01-01"
+  horizon: 1
+  lags_hours: [1, 2, 24, 168]
+  rolling_hours: [24, 168]
+
+drift:
+  adwin:
+    delta: [0.002, 0.01, 0.05]
+  psi:
+    window_hours: 168
+    bins: 10
+    warn: 0.1
+    drift: 0.25
+    drift_grid: [0.1, 0.25, 0.5]
+  page_hinkley:
+    delta: 0.05
+    threshold_grid: [5, 10, 20]
+  kswin:
+    window_size: 100
+    stat_size: 30
+    alpha_grid: [0.005, 0.0005]
+
+benchmark:
+  n_seeds: 30
+  max_delay_hours: 336
+
+retrain:
+  cooldown_hours: 72
+  train_window_weeks: 6
+  gate_holdout_hours: 48
+
+mlflow:
+  tracking_uri: http://localhost:5000
+  experiment: taxidrift
+
+results_dir: results
+models_dir: models

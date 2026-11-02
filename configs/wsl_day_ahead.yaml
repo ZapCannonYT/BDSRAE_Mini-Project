@@ -1,0 +1,10 @@
+# Day-ahead variant: the model only sees demand at least 24 hours old.
+extends: wsl.yaml
+
+model:
+  horizon: 24
+  lags_hours: [24, 48, 168]
+  rolling_hours: [24, 168]
+
+results_dir: results/day_ahead
+models_dir: models/day_ahead

@@ -1,0 +1,8 @@
+# Overrides applied on top of default.yaml inside docker compose services.
+extends: default.yaml
+
+kafka:
+  bootstrap_servers: kafka:29092
+
+mlflow:
+  tracking_uri: http://mlflow:5000

@@ -1,0 +1,73 @@
+detector,scope,alarms_before_march,first_alarm_after_mar1,hours_from_mar15,total_alarms
+adwin_d0.002,city,12,2020-03-12 23:00:00,-49.0,31
+adwin_d0.01,city,14,2020-03-12 23:00:00,-49.0,32
+adwin_d0.05,city,22,2020-03-11 15:00:00,-81.0,45
+adwin_demand_d0.002,city,9,2020-03-14 07:00:00,-17.0,21
+psi_t0.1,city,1,,,1
+psi_t0.25,city,1,,,1
+psi_t0.5,city,3,,,3
+page_hinkley_t5,city,42,2020-03-03 23:00:00,-265.0,121
+page_hinkley_t10,city,18,2020-03-11 03:00:00,-93.0,71
+page_hinkley_t20,city,7,2020-03-12 21:00:00,-51.0,29
+kswin_a0.005,city,45,2020-03-01 02:00:00,-334.0,78
+kswin_a0.0005,city,40,2020-03-02 00:00:00,-312.0,65
+adwin_d0.002,Manhattan,12,2020-03-12 23:00:00,-49.0,30
+adwin_d0.01,Manhattan,15,2020-03-12 23:00:00,-49.0,36
+adwin_d0.05,Manhattan,25,2020-03-11 15:00:00,-81.0,47
+adwin_demand_d0.002,Manhattan,10,2020-03-14 07:00:00,-17.0,22
+psi_t0.1,Manhattan,1,,,1
+psi_t0.25,Manhattan,1,,,1
+psi_t0.5,Manhattan,3,,,3
+page_hinkley_t5,Manhattan,46,2020-03-03 14:00:00,-274.0,127
+page_hinkley_t10,Manhattan,21,2020-03-10 23:00:00,-97.0,76
+page_hinkley_t20,Manhattan,10,2020-03-12 21:00:00,-51.0,32
+kswin_a0.005,Manhattan,45,2020-03-01 07:00:00,-329.0,77
+kswin_a0.0005,Manhattan,41,2020-03-02 02:00:00,-310.0,62
+adwin_d0.002,Brooklyn,9,2020-03-15 15:00:00,15.0,24
+adwin_d0.01,Brooklyn,11,2020-03-07 15:00:00,-177.0,26
+adwin_d0.05,Brooklyn,15,2020-03-14 07:00:00,-17.0,30
+adwin_demand_d0.002,Brooklyn,10,2020-03-18 07:00:00,79.0,23
+psi_t0.1,Brooklyn,2,2020-03-07 23:00:00,-169.0,3
+psi_t0.25,Brooklyn,5,2020-03-14 11:00:00,-13.0,6
+psi_t0.5,Brooklyn,4,2020-03-15 05:00:00,5.0,5
+page_hinkley_t5,Brooklyn,20,2020-03-13 17:00:00,-31.0,103
+page_hinkley_t10,Brooklyn,9,2020-03-07 20:00:00,-172.0,70
+page_hinkley_t20,Brooklyn,5,2020-03-14 19:00:00,-5.0,34
+kswin_a0.005,Brooklyn,35,2020-03-09 02:00:00,-142.0,61
+kswin_a0.0005,Brooklyn,18,2020-03-14 02:00:00,-22.0,33
+adwin_d0.002,Queens,2,2020-03-11 15:00:00,-81.0,22
+adwin_d0.01,Queens,3,2020-03-11 15:00:00,-81.0,22
+adwin_d0.05,Queens,5,2020-03-03 15:00:00,-273.0,25
+adwin_demand_d0.002,Queens,8,2020-03-11 15:00:00,-81.0,25
+psi_t0.1,Queens,3,,,3
+psi_t0.25,Queens,2,,,2
+psi_t0.5,Queens,2,,,2
+page_hinkley_t5,Queens,31,2020-03-08 02:00:00,-166.0,97
+page_hinkley_t10,Queens,7,2020-03-09 14:00:00,-130.0,44
+page_hinkley_t20,Queens,4,2020-03-10 19:00:00,-101.0,18
+kswin_a0.005,Queens,30,2020-03-08 09:00:00,-159.0,45
+kswin_a0.0005,Queens,9,2020-03-01 09:00:00,-327.0,16
+adwin_d0.002,Bronx,0,2020-03-19 15:00:00,111.0,13
+adwin_d0.01,Bronx,1,2020-03-18 07:00:00,79.0,14
+adwin_d0.05,Bronx,1,2020-03-11 15:00:00,-81.0,17
+adwin_demand_d0.002,Bronx,4,2020-03-06 07:00:00,-209.0,22
+psi_t0.1,Bronx,4,,,4
+psi_t0.25,Bronx,5,2020-03-18 17:00:00,89.0,6
+psi_t0.5,Bronx,1,2020-03-19 23:00:00,119.0,2
+page_hinkley_t5,Bronx,36,2020-03-02 00:00:00,-312.0,105
+page_hinkley_t10,Bronx,10,2020-03-16 00:00:00,24.0,52
+page_hinkley_t20,Bronx,1,2020-03-05 11:00:00,-229.0,20
+kswin_a0.005,Bronx,31,2020-03-07 15:00:00,-177.0,58
+kswin_a0.0005,Bronx,14,2020-03-14 20:00:00,-4.0,26
+adwin_d0.002,Staten Island,0,2020-03-22 07:00:00,175.0,16
+adwin_d0.01,Staten Island,0,2020-03-20 23:00:00,143.0,16
+adwin_d0.05,Staten Island,0,2020-03-07 15:00:00,-177.0,16
+adwin_demand_d0.002,Staten Island,2,2020-05-06 15:00:00,1263.0,5
+psi_t0.1,Staten Island,0,2020-03-21 11:00:00,155.0,2
+psi_t0.25,Staten Island,0,2020-03-31 17:00:00,401.0,1
+psi_t0.5,Staten Island,0,,,0
+page_hinkley_t5,Staten Island,28,2020-03-01 14:00:00,-322.0,68
+page_hinkley_t10,Staten Island,5,2020-03-10 19:00:00,-101.0,18
+page_hinkley_t20,Staten Island,1,2020-03-02 22:00:00,-290.0,6
+kswin_a0.005,Staten Island,16,2020-03-01 03:00:00,-333.0,38
+kswin_a0.0005,Staten Island,2,2020-05-18 09:00:00,1545.0,7

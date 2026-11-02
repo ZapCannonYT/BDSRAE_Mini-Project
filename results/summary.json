@@ -1,0 +1,512 @@
+{
+ "model_wape": 13.135140105995468,
+ "naive_wape": 22.003682337292396,
+ "stream_demo_rate_median": 1818.8362327534487,
+ "stream_demo_rows": 3245202,
+ "detectors": [
+  {
+   "family": "adwin",
+   "detector": "adwin_d0.002",
+   "false_alarms_per_1000h": 4.416,
+   "detection_rate": 1.0,
+   "median_delay_h": 26.5
+  },
+  {
+   "family": "adwin",
+   "detector": "adwin_d0.01",
+   "false_alarms_per_1000h": 4.812,
+   "detection_rate": 1.0,
+   "median_delay_h": 24.5
+  },
+  {
+   "family": "adwin",
+   "detector": "adwin_d0.05",
+   "false_alarms_per_1000h": 6.85,
+   "detection_rate": 1.0,
+   "median_delay_h": 23.5
+  },
+  {
+   "family": "adwin_demand",
+   "detector": "adwin_demand_d0.002",
+   "false_alarms_per_1000h": 3.623,
+   "detection_rate": 1.0,
+   "median_delay_h": 38.5
+  },
+  {
+   "family": "kswin",
+   "detector": "kswin_a0.0005",
+   "false_alarms_per_1000h": 10.7,
+   "detection_rate": 1.0,
+   "median_delay_h": 28.5
+  },
+  {
+   "family": "kswin",
+   "detector": "kswin_a0.005",
+   "false_alarms_per_1000h": 12.398,
+   "detection_rate": 1.0,
+   "median_delay_h": 37.0
+  },
+  {
+   "family": "page_hinkley",
+   "detector": "page_hinkley_t10",
+   "false_alarms_per_1000h": 5.265,
+   "detection_rate": 1.0,
+   "median_delay_h": 7.0
+  },
+  {
+   "family": "page_hinkley",
+   "detector": "page_hinkley_t20",
+   "false_alarms_per_1000h": 2.264,
+   "detection_rate": 1.0,
+   "median_delay_h": 17.0
+  },
+  {
+   "family": "page_hinkley",
+   "detector": "page_hinkley_t5",
+   "false_alarms_per_1000h": 11.209,
+   "detection_rate": 1.0,
+   "median_delay_h": 2.0
+  },
+  {
+   "family": "psi",
+   "detector": "psi_t0.1",
+   "false_alarms_per_1000h": 0.453,
+   "detection_rate": 0.031,
+   "median_delay_h": 171.0
+  },
+  {
+   "family": "psi",
+   "detector": "psi_t0.25",
+   "false_alarms_per_1000h": 0.453,
+   "detection_rate": 0.062,
+   "median_delay_h": 182.0
+  },
+  {
+   "family": "psi",
+   "detector": "psi_t0.5",
+   "false_alarms_per_1000h": 0.453,
+   "detection_rate": 0.125,
+   "median_delay_h": 194.0
+  }
+ ],
+ "delay_by_scenario": [
+  {
+   "scenario": "abrupt_down_50pct",
+   "adwin": 25.0,
+   "adwin_demand": 32.0,
+   "kswin": 37.0,
+   "page_hinkley": 2.0,
+   "psi": null
+  },
+  {
+   "scenario": "abrupt_up_50pct",
+   "adwin": 23.0,
+   "adwin_demand": 28.0,
+   "kswin": 24.0,
+   "page_hinkley": 11.0,
+   "psi": null
+  },
+  {
+   "scenario": "gradual_down_50pct",
+   "adwin": 54.0,
+   "adwin_demand": 149.0,
+   "kswin": 55.0,
+   "page_hinkley": 66.0,
+   "psi": 183.0
+  },
+  {
+   "scenario": "profile_shift_3h",
+   "adwin": 15.0,
+   "adwin_demand": 36.0,
+   "kswin": 18.0,
+   "page_hinkley": 6.0,
+   "psi": null
+  }
+ ],
+ "rate_by_scenario": [
+  {
+   "scenario": "abrupt_down_50pct",
+   "adwin": 1.0,
+   "adwin_demand": 1.0,
+   "kswin": 1.0,
+   "page_hinkley": 1.0,
+   "psi": 0.0
+  },
+  {
+   "scenario": "abrupt_up_50pct",
+   "adwin": 1.0,
+   "adwin_demand": 1.0,
+   "kswin": 1.0,
+   "page_hinkley": 1.0,
+   "psi": 0.0
+  },
+  {
+   "scenario": "gradual_down_50pct",
+   "adwin": 1.0,
+   "adwin_demand": 1.0,
+   "kswin": 1.0,
+   "page_hinkley": 1.0,
+   "psi": 0.29
+  },
+  {
+   "scenario": "profile_shift_3h",
+   "adwin": 1.0,
+   "adwin_demand": 1.0,
+   "kswin": 1.0,
+   "page_hinkley": 1.0,
+   "psi": 0.0
+  }
+ ],
+ "covid_city": [
+  {
+   "detector": "adwin_d0.002",
+   "scope": "city",
+   "alarms_before_march": 12,
+   "first_alarm_after_mar1": "2020-03-12 23:00:00",
+   "hours_from_mar15": -49.0,
+   "total_alarms": 31
+  },
+  {
+   "detector": "adwin_d0.01",
+   "scope": "city",
+   "alarms_before_march": 14,
+   "first_alarm_after_mar1": "2020-03-12 23:00:00",
+   "hours_from_mar15": -49.0,
+   "total_alarms": 32
+  },
+  {
+   "detector": "adwin_d0.05",
+   "scope": "city",
+   "alarms_before_march": 22,
+   "first_alarm_after_mar1": "2020-03-11 15:00:00",
+   "hours_from_mar15": -81.0,
+   "total_alarms": 45
+  },
+  {
+   "detector": "adwin_demand_d0.002",
+   "scope": "city",
+   "alarms_before_march": 9,
+   "first_alarm_after_mar1": "2020-03-14 07:00:00",
+   "hours_from_mar15": -17.0,
+   "total_alarms": 21
+  },
+  {
+   "detector": "psi_t0.1",
+   "scope": "city",
+   "alarms_before_march": 1,
+   "first_alarm_after_mar1": null,
+   "hours_from_mar15": null,
+   "total_alarms": 1
+  },
+  {
+   "detector": "psi_t0.25",
+   "scope": "city",
+   "alarms_before_march": 1,
+   "first_alarm_after_mar1": null,
+   "hours_from_mar15": null,
+   "total_alarms": 1
+  },
+  {
+   "detector": "psi_t0.5",
+   "scope": "city",
+   "alarms_before_march": 3,
+   "first_alarm_after_mar1": null,
+   "hours_from_mar15": null,
+   "total_alarms": 3
+  },
+  {
+   "detector": "page_hinkley_t5",
+   "scope": "city",
+   "alarms_before_march": 42,
+   "first_alarm_after_mar1": "2020-03-03 23:00:00",
+   "hours_from_mar15": -265.0,
+   "total_alarms": 121
+  },
+  {
+   "detector": "page_hinkley_t10",
+   "scope": "city",
+   "alarms_before_march": 18,
+   "first_alarm_after_mar1": "2020-03-11 03:00:00",
+   "hours_from_mar15": -93.0,
+   "total_alarms": 71
+  },
+  {
+   "detector": "page_hinkley_t20",
+   "scope": "city",
+   "alarms_before_march": 7,
+   "first_alarm_after_mar1": "2020-03-12 21:00:00",
+   "hours_from_mar15": -51.0,
+   "total_alarms": 29
+  },
+  {
+   "detector": "kswin_a0.005",
+   "scope": "city",
+   "alarms_before_march": 45,
+   "first_alarm_after_mar1": "2020-03-01 02:00:00",
+   "hours_from_mar15": -334.0,
+   "total_alarms": 78
+  },
+  {
+   "detector": "kswin_a0.0005",
+   "scope": "city",
+   "alarms_before_march": 40,
+   "first_alarm_after_mar1": "2020-03-02 00:00:00",
+   "hours_from_mar15": -312.0,
+   "total_alarms": 65
+  }
+ ],
+ "policies": [
+  {
+   "policy": "adwin",
+   "before (Oct 2019-Feb 2020)": 13.15,
+   "crash (Mar-Jun 2020)": 30.42,
+   "recovery (Jul 2020-Dec 2021)": 19.22,
+   "retrains": 34.0,
+   "promoted": 17.0,
+   "retrain_seconds": 75.03
+  },
+  {
+   "policy": "adwin_any_borough",
+   "before (Oct 2019-Feb 2020)": 13.15,
+   "crash (Mar-Jun 2020)": 28.56,
+   "recovery (Jul 2020-Dec 2021)": 18.87,
+   "retrains": 58.0,
+   "promoted": 31.0,
+   "retrain_seconds": 137.9
+  },
+  {
+   "policy": "combined",
+   "before (Oct 2019-Feb 2020)": 13.15,
+   "crash (Mar-Jun 2020)": 30.42,
+   "recovery (Jul 2020-Dec 2021)": 19.22,
+   "retrains": 34.0,
+   "promoted": 17.0,
+   "retrain_seconds": 75.48
+  },
+  {
+   "policy": "never",
+   "before (Oct 2019-Feb 2020)": 13.15,
+   "crash (Mar-Jun 2020)": 28.87,
+   "recovery (Jul 2020-Dec 2021)": 18.35,
+   "retrains": 0.0,
+   "promoted": 0.0,
+   "retrain_seconds": 0.0
+  },
+  {
+   "policy": "oracle",
+   "before (Oct 2019-Feb 2020)": 13.15,
+   "crash (Mar-Jun 2020)": 29.89,
+   "recovery (Jul 2020-Dec 2021)": 22.92,
+   "retrains": 6.0,
+   "promoted": 6.0,
+   "retrain_seconds": 11.9
+  },
+  {
+   "policy": "periodic",
+   "before (Oct 2019-Feb 2020)": 13.83,
+   "crash (Mar-Jun 2020)": 36.32,
+   "recovery (Jul 2020-Dec 2021)": 19.04,
+   "retrains": 27.0,
+   "promoted": 22.0,
+   "retrain_seconds": 61.3
+  },
+  {
+   "policy": "psi",
+   "before (Oct 2019-Feb 2020)": 13.15,
+   "crash (Mar-Jun 2020)": 28.87,
+   "recovery (Jul 2020-Dec 2021)": 18.35,
+   "retrains": 1.0,
+   "promoted": 0.0,
+   "retrain_seconds": 2.25
+  }
+ ],
+ "borough_never": [
+  {
+   "scope": "Bronx",
+   "before (Oct 2019-Feb 2020)": 114.3,
+   "crash (Mar-Jun 2020)": 131.48,
+   "recovery (Jul 2020-Dec 2021)": 114.47,
+   "crash_over_before": 1.15
+  },
+  {
+   "scope": "Brooklyn",
+   "before (Oct 2019-Feb 2020)": 56.83,
+   "crash (Mar-Jun 2020)": 100.51,
+   "recovery (Jul 2020-Dec 2021)": 90.68,
+   "crash_over_before": 1.77
+  },
+  {
+   "scope": "Manhattan",
+   "before (Oct 2019-Feb 2020)": 11.76,
+   "crash (Mar-Jun 2020)": 24.63,
+   "recovery (Jul 2020-Dec 2021)": 15.44,
+   "crash_over_before": 2.09
+  },
+  {
+   "scope": "Queens",
+   "before (Oct 2019-Feb 2020)": 21.77,
+   "crash (Mar-Jun 2020)": 52.47,
+   "recovery (Jul 2020-Dec 2021)": 34.94,
+   "crash_over_before": 2.41
+  },
+  {
+   "scope": "Staten Island",
+   "before (Oct 2019-Feb 2020)": 211.48,
+   "crash (Mar-Jun 2020)": 215.65,
+   "recovery (Jul 2020-Dec 2021)": 215.09,
+   "crash_over_before": 1.02
+  }
+ ],
+ "best_policy": "adwin_any_borough",
+ "gap": [
+  {
+   "policy": "adwin",
+   "Bronx": 174.88,
+   "Brooklyn": 128.18,
+   "Manhattan": 24.27,
+   "Queens": 62.5,
+   "Staten Island": 1255.89,
+   "worst_minus_best": 1231.62
+  },
+  {
+   "policy": "adwin_any_borough",
+   "Bronx": 169.4,
+   "Brooklyn": 124.03,
+   "Manhattan": 22.59,
+   "Queens": 59.92,
+   "Staten Island": 1154.75,
+   "worst_minus_best": 1132.17
+  },
+  {
+   "policy": "combined",
+   "Bronx": 174.88,
+   "Brooklyn": 128.18,
+   "Manhattan": 24.27,
+   "Queens": 62.5,
+   "Staten Island": 1255.89,
+   "worst_minus_best": 1231.62
+  },
+  {
+   "policy": "never",
+   "Bronx": 131.48,
+   "Brooklyn": 100.51,
+   "Manhattan": 24.63,
+   "Queens": 52.47,
+   "Staten Island": 215.65,
+   "worst_minus_best": 191.03
+  },
+  {
+   "policy": "oracle",
+   "Bronx": 173.7,
+   "Brooklyn": 126.13,
+   "Manhattan": 23.76,
+   "Queens": 62.24,
+   "Staten Island": 1288.34,
+   "worst_minus_best": 1264.58
+  },
+  {
+   "policy": "periodic",
+   "Bronx": 185.43,
+   "Brooklyn": 133.26,
+   "Manhattan": 30.07,
+   "Queens": 68.04,
+   "Staten Island": 1582.29,
+   "worst_minus_best": 1552.21
+  },
+  {
+   "policy": "psi",
+   "Bronx": 131.48,
+   "Brooklyn": 100.51,
+   "Manhattan": 24.63,
+   "Queens": 52.47,
+   "Staten Island": 215.65,
+   "worst_minus_best": 191.03
+  }
+ ],
+ "city_vs_borough": [
+  {
+   "target": "Bronx",
+   "borough's own detector": 0.75,
+   "city-wide detector": 0.25,
+   "detector": "adwin_d0.002"
+  },
+  {
+   "target": "Brooklyn",
+   "borough's own detector": 1.0,
+   "city-wide detector": 0.25,
+   "detector": "adwin_d0.002"
+  },
+  {
+   "target": "Manhattan",
+   "borough's own detector": 1.0,
+   "city-wide detector": 1.0,
+   "detector": "adwin_d0.002"
+  },
+  {
+   "target": "Queens",
+   "borough's own detector": 1.0,
+   "city-wide detector": 0.312,
+   "detector": "adwin_d0.002"
+  },
+  {
+   "target": "Staten Island",
+   "borough's own detector": 0.375,
+   "city-wide detector": 0.344,
+   "detector": "adwin_d0.002"
+  },
+  {
+   "target": "Bronx",
+   "borough's own detector": 0.625,
+   "city-wide detector": 0.0,
+   "detector": "psi_t0.25"
+  },
+  {
+   "target": "Brooklyn",
+   "borough's own detector": 0.5,
+   "city-wide detector": 0.0,
+   "detector": "psi_t0.25"
+  },
+  {
+   "target": "Manhattan",
+   "borough's own detector": 0.031,
+   "city-wide detector": 0.031,
+   "detector": "psi_t0.25"
+  },
+  {
+   "target": "Queens",
+   "borough's own detector": 1.0,
+   "city-wide detector": 0.0,
+   "detector": "psi_t0.25"
+  },
+  {
+   "target": "Staten Island",
+   "borough's own detector": 0.406,
+   "city-wide detector": 0.0,
+   "detector": "psi_t0.25"
+  }
+ ],
+ "live": {
+  "hours": 288,
+  "alarms": 7,
+  "city_alarms": [
+   {
+    "timestamp": "2020-03-08 07:00:00",
+    "detector": "psi"
+   },
+   {
+    "timestamp": "2020-03-12 23:00:00",
+    "detector": "adwin"
+   }
+  ],
+  "retrains": [
+   {
+    "timestamp": "2020-03-12 23:00:00",
+    "reason": "adwin confirmed by psi warning",
+    "promoted": false,
+    "challenger_wape": 20.59,
+    "champion_wape": 17.86,
+    "seconds": 299.0
+   }
+  ]
+ }
+}
