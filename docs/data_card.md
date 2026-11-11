@@ -16,7 +16,7 @@ Owner: Raghav U (with input from Rahul Saran Sharma on processing).
 - Drop pickups outside 2019-01-01 to 2022-01-01 (the raw files contain some wrong timestamps).
 - Drop unknown zones 264 and 265.
 - Fill zone-hours with no trips with 0.
-- TODO: rows in / rows out per year, storage sizes.
+- Input: 36 monthly Yellow Taxi Parquet files (Jan 2019 - Dec 2021), about 2.0 GB on disk. Output: one row per zone per hour (263 zones x 26,304 hours), a few tens of MB of Parquet.
 
 ## Known shifts in the data
 - COVID-19: demand collapse from about 15 March 2020; NY PAUSE from 22 March 2020.
@@ -24,7 +24,7 @@ Owner: Raghav U (with input from Rahul Saran Sharma on processing).
 
 ## Privacy
 - The TLC files contain no names or other direct identifiers. We further reduce detail to zone-hour counts.
-- TODO: number of zone-hours with very small counts (fewer than 5 trips) and how they are handled.
+- Many outer-borough zone-hours have fewer than 5 pickups (most Staten Island and Bronx zone-hours are 0 or 1). They are kept as counts, not suppressed; this is why percentage errors in those boroughs are high and noisy.
 
 ## Biases and limitations
 - Yellow taxis serve Manhattan far more than other boroughs; outer-borough demand is under-represented

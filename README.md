@@ -8,7 +8,7 @@ than others.
 
 Team: Rahul Saran Sharma, Rahul Prasanna, Raghav U. Full plan: [docs/project_plan.pdf](docs/project_plan.pdf).
 
-> Status: pipeline, detectors, retraining and experiments are implemented, with results in `results/` and `notebooks/results.ipynb`. Still open: technical report, Spark scaling measurements, final model and data cards. See `docs/demo_video.md` for the live demo.
+> Status: complete. Pipeline, detectors, retraining and experiments are implemented; results are in `results/` and `notebooks/results.ipynb`, the technical report is [docs/report.pdf](docs/report.pdf), and the cards are [docs/model_card.md](docs/model_card.md) and [docs/data_card.md](docs/data_card.md). See `docs/demo_video.md` for the live demo.
 
 ## Architecture
 
@@ -89,6 +89,12 @@ Experiments (each writes CSVs to `results/`):
 ~/taxidrift-venv/bin/python experiments/run_scaling.py batch
 ```
 
+Rebuild the report PDF from `results/summary.json` (needs `reportlab`):
+
+```bash
+python scripts/build_report.py
+```
+
 `docker-compose.yml` describes an equivalent containerised stack, but **it has not been run** because Docker was not available on the development machine.
 
 ## Working together
@@ -101,12 +107,12 @@ Experiments (each writes CSVs to `results/`):
 
 ## Deliverables (Option A)
 
-- [ ] README with architecture diagram and setup steps
-- [ ] Reproducible pipeline (Docker Compose + scripts)
-- [ ] Results notebook
-- [ ] 3-5 page technical report (`docs/report.pdf`)
-- [ ] Model card and data card (`docs/model_card.md`, `docs/data_card.md`)
-- [ ] 3-minute demo video (link here)
+- [x] README with architecture diagram and setup steps
+- [x] Reproducible pipeline (Docker Compose + scripts)
+- [x] Results notebook
+- [x] 3-5 page technical report (`docs/report.pdf`)
+- [x] Model card and data card (`docs/model_card.md`, `docs/data_card.md`)
+- [ ] 3-minute demo video (presented in class)
 
 ## Data
 
