@@ -1,0 +1,8 @@
+{"event": "drift_alarm", "stream_time": "2020-03-07 23:00:00", "logged_at": "2026-11-02T06:29:15+00:00", "detector": "psi", "scope": "Manhattan", "level": "drift", "statistic": 0.2733287799110485}
+{"event": "drift_alarm", "stream_time": "2020-03-07 23:00:00", "logged_at": "2026-11-02T06:29:15+00:00", "detector": "psi", "scope": "Queens", "level": "drift", "statistic": 1.429219248491695}
+{"event": "drift_alarm", "stream_time": "2020-03-08 07:00:00", "logged_at": "2026-11-02T06:29:16+00:00", "detector": "psi", "scope": "city", "level": "drift", "statistic": 0.26504284709094694}
+{"event": "drift_alarm", "stream_time": "2020-03-11 15:00:00", "logged_at": "2026-11-02T06:29:35+00:00", "detector": "adwin", "scope": "Queens", "level": "drift", "statistic": 2.0130433154549863}
+{"event": "drift_alarm", "stream_time": "2020-03-12 23:00:00", "logged_at": "2026-11-02T06:29:43+00:00", "detector": "adwin", "scope": "city", "level": "drift", "statistic": 3.3000739904233813}
+{"event": "drift_alarm", "stream_time": "2020-03-12 23:00:00", "logged_at": "2026-11-02T06:29:43+00:00", "detector": "adwin", "scope": "Manhattan", "level": "drift", "statistic": 3.702136012712749}
+{"event": "drift_alarm", "stream_time": "2020-03-12 23:00:00", "logged_at": "2026-11-02T06:29:43+00:00", "detector": "adwin", "scope": "Queens", "level": "drift", "statistic": 1.705128234291174}
+{"event": "retrain_rejected", "stream_time": "2020-03-12 23:00:00", "logged_at": "2026-11-02T06:34:45+00:00", "reason": "adwin confirmed by psi warning", "promoted": false, "challenger_wape": 20.59347291960624, "champion_wape": 17.858066069358177, "seconds": 299.00304300300013}
