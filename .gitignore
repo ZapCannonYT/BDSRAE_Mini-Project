@@ -11,6 +11,8 @@ checkpoints/
 *.parquet
 *.npy
 Project_Datasets_Level3_Set1.docx
+docs/project_plan.pdf
+docs/demo_video.md
 *.crc
 
 # Python

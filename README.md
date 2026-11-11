@@ -6,10 +6,9 @@ drift detectors (ADWIN, PSI, Page-Hinkley, KSWIN), measures detection delay and 
 retrains automatically when drift is confirmed, and checks whether drift hurts some boroughs more
 than others.
 
-Team: Rahul Saran Sharma, Rahul Prasanna, Raghav U. Full plan: [docs/project_plan.pdf](docs/project_plan.pdf).
+Team: Rahul Saran Sharma, Rahul Prasanna, Raghav U.
 
-> Status: complete. Pipeline, detectors, retraining and experiments are implemented; results are in `results/` and `notebooks/results.ipynb`, the technical report is [docs/report.pdf](docs/report.pdf), and the cards are [docs/model_card.md](docs/model_card.md) and [docs/data_card.md](docs/data_card.md). See `docs/demo_video.md` for the live demo.
-
+> Status: complete. Pipeline, detectors, retraining and experiments are implemented; results are in `results/` and `notebooks/results.ipynb`, the technical report is [docs/report.pdf](docs/report.pdf), and the cards are [docs/model_card.md](docs/model_card.md) and [docs/data_card.md](docs/data_card.md).
 ## Architecture
 
 ```mermaid
@@ -46,7 +45,7 @@ flowchart LR
 | `src/taxidrift/schemas.py` | Kafka message formats (agree before changing) | shared |
 | `experiments/` | `run_detectors.py`, `run_retraining.py`, `run_scaling.py` -> `results/` | one each |
 | `notebooks/results.ipynb` | All report figures, built from `results/` | shared |
-| `docs/` | Plan, model card, data card, report | shared |
+| `docs/` | Model card, data card, report, figures | shared |
 | `configs/default.yaml` | Every tunable setting; `docker.yaml` overrides for containers | shared |
 
 ## Setup
