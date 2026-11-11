@@ -81,9 +81,9 @@ def run(policy_name: str, start: str, end: str, group: str, idle_seconds: int) -
     consumer.subscribe([cfg["kafka"]["topics"]["zone_demand"]])
 
     next_t, latest, n_msgs = start_t, -1, 0
-    rows, last_msg, t_begin = [], time.time(), time.time()
+    rows, last_msg, t_begin = [], None, time.time()  # the idle timer starts with the first message
     print(f"monitor up: policy={policy_name}, stream from {start}", flush=True)
-    while next_t < end_t and time.time() - last_msg < idle_seconds:
+    while next_t < end_t and (last_msg is None or time.time() - last_msg < idle_seconds):
         msg = consumer.poll(1.0)
         if msg is None or msg.error():
             continue

@@ -59,7 +59,7 @@ def build_query(spark, bootstrap_servers: str, in_topic: str, out_topic: str, wi
 def watch(query, progress_csv, idle_stop: float | None = None) -> None:
     """Follow the query, saving each micro-batch's throughput and duration."""
     fields = ["batch", "time", "input_rows", "input_rate", "processed_rate", "batch_ms", "watermark"]
-    seen, last_rows = -1, time.time()
+    seen, last_rows = -1, None  # the idle timer starts with the first data
     with open(progress_csv, "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(fields)
@@ -75,7 +75,7 @@ def watch(query, progress_csv, idle_stop: float | None = None) -> None:
                     last_rows = time.time()
                     print(f"batch {seen}: {n} rows, {p.get('processedRowsPerSecond', 0):.0f} rows/s, "
                           f"watermark {p.get('eventTime', {}).get('watermark')}", flush=True)
-            if idle_stop and time.time() - last_rows > idle_stop:
+            if idle_stop and last_rows and time.time() - last_rows > idle_stop:
                 query.stop()
                 break
             time.sleep(1)
